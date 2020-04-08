@@ -15,48 +15,50 @@ e divide a soma
 cpf = 490.605.938-47
 
 """
-print("digite o cpf, sem . ou -")
-cpf = tuple(input())
-num1 = cpf[0]
-num2 = cpf[1]
-num3 = cpf[2]
-num4 = cpf[3]
-num5 = cpf[4]
-num6 = cpf[5]
-num7 = cpf[6]
-num8 = cpf[7]
-num9 = cpf[8]
-num10 = cpf[9]
-num11 = cpf[10]
-num1a = int(num1) * 1
-num2a = int(num2) * 2
-num3a = int(num3) * 3
-num4a = int(num4) * 4
-num5a = int(num5) * 5
-num6a = int(num6) * 6
-num7a = int(num7) * 7
-num8a = int(num8) * 8
-num9a = int(num9) * 9
-pridig = [num1a, num2a, num3a, num4a, num5a, num6a, num7a, num8a, num9a]
-soma = sum(pridig)
-print(soma)
-verific_1 = soma % 11
-num1a = 0
-num2a = int(num2) * 1
-num3a = int(num3) * 2
-num4a = int(num4) * 3
-num5a = int(num5) * 4
-num6a = int(num6) * 5
-num7a = int(num7) * 6
-num8a = int(num8) * 7
-num9a = int(num9) * 8
-num10a = int(num10) * 9
-pridig = [num1a, num2a, num3a, num4a, num5a, num6a, num7a, num8a, num9a, num10a]
-soma = sum(pridig)
-verific_2 = soma % 11
-verificador_somado = (verific_1, verific_2)
-verificador_original = (int(num10), int(num11))
-if verificador_original == verificador_somado:
-    print("O cpf é original")
+erro = True
+E1 = True
+E2 = True
+E3 = True
+while erro:
+    print("digite o cpf, sem . ou -")
+    cpf = tuple(input())
+    erro1 = ("0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0")
+    if cpf == erro1:
+        space = None
+    else:
+        E1 = False
+    if cpf[3] != '.':
+        E2 = False
+    if cpf[7] != '.':
+        E3 = False
+    if not E1 and not E2 and not E3:
+        erro = False
+    else:
+        print("cpf invalido")
+soma = 0
+for I in range(0, 9):
+    N = I + 1
+    mult = int(cpf[I]) * N
+    soma = soma + mult
+    print(soma)
+
+prim_verificador = soma % 11
+sec_verificador = int(cpf[9])
+
+mult = 0
+soma = 0
+
+if prim_verificador == sec_verificador:
+    for I in range(0, 10):
+        mult = int(cpf[I]) * I
+        soma = soma + mult
+        print(soma)
+
+sec_verificador = soma % 11
+orig_verificador = int(cpf[9]), int(cpf[10])
+som_verificador = prim_verificador, sec_verificador
+
+if orig_verificador == som_verificador:
+    print("seu cpf é original")
 else:
-    print("o cpf não é original")
+    print("seu cpf não é original")
