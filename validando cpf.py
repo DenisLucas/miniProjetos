@@ -1,18 +1,13 @@
 """
 1 - calcular o primeiro digito verificador calculando os 9 numeros do cpf
-490.605.938-47
-    x
-123 456 789
+
 soma os resultados .sum
 
 e divide a soma
 
 2 - calcular o segundo digito usando os 9 numeros mais o primeiro digito verificador
-490.605.938-47
-012.345.678.9 / 11
-3 - verificar se os dois numeros recebidos são iguais ao numero verificador
 
-cpf = 490.605.938-47
+3 - verificar se os dois numeros recebidos são iguais ao numero verificador
 
 """
 erro = True
