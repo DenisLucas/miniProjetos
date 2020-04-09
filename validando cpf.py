@@ -22,14 +22,20 @@ while erro:
         space = None
     else:
         E1 = False
-    if cpf[3] != '.':
+    if len(cpf) > 11:
+        print("numeros em excesso (não se usa . ou - aqui)")
+    else:
         E2 = False
-    if cpf[7] != '.':
+
+    if len(cpf) < 11:
+        print("numeros insuficientes")
+    else:
         E3 = False
     if not E1 and not E2 and not E3:
         erro = False
     else:
         print("cpf invalido")
+
 soma = 0
 for I in range(0, 9):
     N = I + 1
