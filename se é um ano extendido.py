@@ -12,5 +12,5 @@ def ano_salto(ano):
     return anos_salto
 
 
-ano = input("de me o ano:")
+pulo = input("de me o ano:")
 print(ano_salto(ano))
