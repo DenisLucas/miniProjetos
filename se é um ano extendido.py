@@ -13,4 +13,4 @@ def ano_salto(ano):
 
 
 pulo = input("de me o ano:")
-print(ano_salto(ano))
+print(ano_salto(pulo))
