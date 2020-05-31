@@ -1,16 +1,4 @@
-"""
-1 - calcular o primeiro digito verificador calculando os 9 numeros do cpf
-
-soma os resultados .sum
-
-e divide a soma
-
-2 - calcular o segundo digito usando os 9 numeros mais o primeiro digito verificador
-
-3 - verificar se os dois numeros recebidos são iguais ao numero verificador
-
-"""
-erro = True
+22dasjdaspoerro = True
 E1 = True
 E2 = True
 E3 = True
@@ -41,7 +29,6 @@ for I in range(0, 9):
     N = I + 1
     mult = int(cpf[I]) * N
     soma = soma + mult
-    print(soma)
 
 prim_verificador = soma % 11
 sec_verificador = int(cpf[9])
@@ -53,7 +40,6 @@ if prim_verificador == sec_verificador:
     for I in range(0, 10):
         mult = int(cpf[I]) * I
         soma = soma + mult
-        print(soma)
 
 sec_verificador = soma % 11
 orig_verificador = int(cpf[9]), int(cpf[10])

@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49362e47-f74d-454f-8a17-4558adf2afc2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Minutes to seconds.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emal split.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/se é um ano extendido.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/validando cpf.py" beforeDir="false" afterPath="$PROJECT_DIR$/validando cpf.py" afterDir="false" />
     </list>
@@ -19,9 +22,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1aEb6TxMJHgv0r3UQr2ZXEPPP70" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -30,9 +36,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tkinter" />
   </component>
-  <component name="RunManager" selected="Python.validando cpf">
-    <configuration name="For" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.se é um ano extendido">
+    <configuration name="Minutes to seconds" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="desafio" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -44,7 +51,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/For.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Minutes to seconds.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -53,7 +60,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Teste" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="emal split" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="desafio" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -65,7 +72,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Teste.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/emal split.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -74,7 +81,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="for" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="jogo de acertar numeros" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="desafio" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -86,7 +93,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/for.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jogo de acertar numeros.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -95,7 +102,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="py" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="se é um ano extendido" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="desafio" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -107,7 +114,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/py.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/se é um ano extendido.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.se é um ano extendido" />
+        <item itemvalue="Python.emal split" />
+        <item itemvalue="Python.jogo de acertar numeros" />
+        <item itemvalue="Python.Minutes to seconds" />
         <item itemvalue="Python.validando cpf" />
-        <item itemvalue="Python.for" />
-        <item itemvalue="Python.Teste" />
-        <item itemvalue="Python.For" />
-        <item itemvalue="Python.py" />
       </list>
     </recent_temporary>
   </component>
@@ -158,32 +165,56 @@
       <option name="presentableId" value="Default" />
       <updated>1586303525928</updated>
     </task>
+    <task id="LOCAL-00001" summary="(concluido)">
+      <created>1587425376945</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587425376945</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="(concluido)" />
+    <option name="LAST_COMMIT_MESSAGE" value="(concluido)" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1276" height="175" key="GridCell.Tab.0.bottom" timestamp="1586450811141">
+    <state x="313" y="27" width="797" height="741" key="CommitChangelistDialog2" timestamp="1587425376426">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1586450811141" />
-    <state width="1276" height="175" key="GridCell.Tab.0.center" timestamp="1586450811137">
+    <state x="313" y="27" width="797" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1587425376426" />
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1586969938384">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1586450811137" />
-    <state width="1276" height="175" key="GridCell.Tab.0.left" timestamp="1586450811135">
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1586969938384" />
+    <state width="1276" height="174" key="GridCell.Tab.0.bottom" timestamp="1590890048391">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1586450811135" />
-    <state width="1276" height="175" key="GridCell.Tab.0.right" timestamp="1586450811139">
+    <state width="1276" height="174" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1590890048391" />
+    <state width="1276" height="174" key="GridCell.Tab.0.center" timestamp="1590890048389">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1586450811139" />
-    <state x="364" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1586446349026">
+    <state width="1276" height="174" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1590890048389" />
+    <state width="1276" height="174" key="GridCell.Tab.0.left" timestamp="1590890048388">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="364" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1586446349026" />
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1586317830296">
+    <state width="1276" height="174" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1590890048388" />
+    <state width="1276" height="174" key="GridCell.Tab.0.right" timestamp="1590890048390">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1586317830296" />
+    <state width="1276" height="174" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1590890048390" />
+    <state x="364" y="211" key="com.intellij.ide.util.TipDialog" timestamp="1590888865610">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="364" y="211" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1590888865609" />
+    <state x="476" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590890078857">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="476" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1299.741@67.27.1299.741" timestamp="1590890078857" />
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1590890029883">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1590890029883" />
   </component>
 </project>
