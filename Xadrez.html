@@ -14259,7 +14259,7 @@ a.anchor-link {
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[225]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#criando as peças</span>
@@ -14271,7 +14271,8 @@ a.anchor-link {
     
     <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="s2">&quot;</span><span class="si">{self.type}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
-    
+    <span class="k">def</span> <span class="nf">reset</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">first_move</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="c1">#white pieces</span>
 <span class="n">WhiteRook1</span> <span class="o">=</span> <span class="n">Piece</span><span class="p">(</span><span class="s2">&quot;w&quot;</span><span class="p">,</span><span class="s2">&quot;R&quot;</span><span class="p">)</span>
 <span class="n">WhiteKnight1</span> <span class="o">=</span> <span class="n">Piece</span><span class="p">(</span><span class="s2">&quot;w&quot;</span><span class="p">,</span><span class="s2">&quot;H&quot;</span><span class="p">)</span>
@@ -14355,18 +14356,18 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[226]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Tabuleiro de xadrez</span>
 <span class="k">class</span> <span class="nc">Board</span><span class="p">():</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">dimension</span> <span class="o">=</span> <span class="mi">8</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">grid</span> <span class="o">=</span> <span class="p">[[</span><span class="n">White</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">White</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">White</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="n">White</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span><span class="n">White</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span><span class="n">White</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span><span class="n">White</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span><span class="n">White</span><span class="p">[</span><span class="mi">3</span><span class="p">]],</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">grid</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="n">White</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">White</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="n">White</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span><span class="n">White</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span><span class="n">White</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span><span class="n">White</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span><span class="n">White</span><span class="p">[</span><span class="mi">3</span><span class="p">]],</span>
                     <span class="p">[</span><span class="n">White</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span> <span class="n">White</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">White</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="n">White</span><span class="p">[</span><span class="mi">11</span><span class="p">],</span> <span class="n">White</span><span class="p">[</span><span class="mi">12</span><span class="p">],</span> <span class="n">White</span><span class="p">[</span><span class="mi">13</span><span class="p">],</span> <span class="n">White</span><span class="p">[</span><span class="mi">14</span><span class="p">],</span> <span class="n">White</span><span class="p">[</span><span class="mi">15</span><span class="p">]],</span>
                      <span class="p">[</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">],</span>
                      <span class="p">[</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">],</span>
-                     <span class="p">[</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">],</span>
+                     <span class="p">[</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="n">White</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">],</span>
                      <span class="p">[</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">],</span>
                      <span class="p">[</span><span class="n">Black</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span> <span class="n">Black</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">Black</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="n">Black</span><span class="p">[</span><span class="mi">11</span><span class="p">],</span> <span class="n">Black</span><span class="p">[</span><span class="mi">12</span><span class="p">],</span> <span class="n">Black</span><span class="p">[</span><span class="mi">13</span><span class="p">],</span> <span class="n">Black</span><span class="p">[</span><span class="mi">14</span><span class="p">],</span> <span class="n">Black</span><span class="p">[</span><span class="mi">15</span><span class="p">]],</span>
                      <span class="p">[</span><span class="n">Black</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">Black</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">Black</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="n">Black</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span><span class="n">Black</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span><span class="n">Black</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span><span class="n">Black</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span><span class="n">Black</span><span class="p">[</span><span class="mi">3</span><span class="p">]]</span>
@@ -14442,27 +14443,28 @@ a.anchor-link {
         <span class="n">check</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">piece</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
         <span class="n">moveCol</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">col</span> <span class="o">-</span> <span class="n">Acol</span><span class="p">)</span>
         <span class="n">moveRow</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">row</span> <span class="o">-</span> <span class="n">Arow</span><span class="p">)</span>
+
         <span class="k">if</span> <span class="p">(</span><span class="n">check</span> <span class="o">==</span> <span class="s2">&quot;H&quot;</span><span class="p">):</span>
             <span class="k">return</span> <span class="kc">True</span>
         <span class="k">if</span><span class="p">(</span><span class="n">moveRow</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">Acol</span> <span class="o">==</span> <span class="n">col</span><span class="p">):</span>
             <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">moveRow</span><span class="p">):</span>
-                <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span> <span class="o">+</span> <span class="n">r</span> <span class="o">+</span> <span class="mi">1</span><span class="p">][</span><span class="n">Acol</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">&quot;.&quot;</span><span class="ow">and</span> <span class="n">Arow</span> <span class="o">&lt;</span> <span class="n">row</span><span class="p">):</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">Arow</span> <span class="o">&lt;</span> <span class="n">row</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span> <span class="o">+</span> <span class="n">r</span> <span class="o">+</span> <span class="mi">1</span><span class="p">][</span><span class="n">Acol</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">&quot;.&quot;</span><span class="p">):</span>
                     <span class="k">if</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span> <span class="o">+</span> <span class="n">r</span> <span class="o">+</span> <span class="mi">1</span><span class="p">][</span><span class="n">Acol</span><span class="p">]</span><span class="o">.</span><span class="n">team</span> <span class="o">==</span> <span class="n">piece</span><span class="o">.</span><span class="n">team</span><span class="p">):</span>
                         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;cant move </span><span class="si">%s</span><span class="s2"> in space of other pieces&quot;</span>  <span class="o">%</span> <span class="p">(</span><span class="n">piece</span><span class="p">))</span>
                         <span class="k">return</span> <span class="kc">False</span>
-                <span class="k">elif</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="nb">abs</span><span class="p">(</span><span class="n">Arow</span> <span class="o">-</span> <span class="n">r</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)][</span><span class="n">Acol</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">&quot;.&quot;</span> <span class="ow">and</span> <span class="n">Arow</span> <span class="o">&gt;</span> <span class="n">row</span><span class="p">):</span>
+                <span class="k">elif</span> <span class="p">(</span><span class="n">Arow</span> <span class="o">&gt;</span> <span class="n">row</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="nb">abs</span><span class="p">(</span><span class="n">Arow</span> <span class="o">-</span> <span class="n">r</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)][</span><span class="n">Acol</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">&quot;.&quot;</span><span class="p">):</span>
                     <span class="k">if</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="nb">abs</span><span class="p">(</span><span class="n">Arow</span> <span class="o">-</span> <span class="n">r</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)][</span><span class="n">Acol</span><span class="p">]</span><span class="o">.</span><span class="n">team</span> <span class="o">==</span> <span class="n">piece</span><span class="o">.</span><span class="n">team</span><span class="p">):</span>
                         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;cant move </span><span class="si">%s</span><span class="s2"> in space of other pieces&quot;</span>  <span class="o">%</span> <span class="p">(</span><span class="n">piece</span><span class="p">))</span>
                         <span class="k">return</span> <span class="kc">False</span>
 
         <span class="k">elif</span><span class="p">(</span><span class="n">moveCol</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">Arow</span> <span class="o">==</span> <span class="n">row</span><span class="p">):</span>
             <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">moveCol</span><span class="p">):</span>
-                <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span><span class="p">][</span><span class="n">Acol</span> <span class="o">+</span> <span class="n">r</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">&quot;.&quot;</span> <span class="ow">and</span> <span class="n">Acol</span> <span class="o">&lt;</span> <span class="n">col</span><span class="p">):</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">Acol</span> <span class="o">&lt;</span> <span class="n">col</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span><span class="p">][</span><span class="n">Acol</span> <span class="o">+</span> <span class="n">r</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">&quot;.&quot;</span><span class="p">):</span>
                     <span class="k">if</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span><span class="p">][</span><span class="n">Acol</span> <span class="o">+</span> <span class="n">r</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">team</span> <span class="o">==</span> <span class="n">piece</span><span class="o">.</span><span class="n">team</span><span class="p">):</span>
                         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;cant move </span><span class="si">%s</span><span class="s2"> in space of other pieces&quot;</span>  <span class="o">%</span> <span class="p">(</span><span class="n">piece</span><span class="p">))</span>
                         <span class="k">return</span> <span class="kc">False</span>
                 
-                <span class="k">elif</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span><span class="p">][</span><span class="nb">abs</span><span class="p">(</span><span class="n">Acol</span> <span class="o">-</span> <span class="n">r</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)]</span> <span class="o">!=</span> <span class="s2">&quot;.&quot;</span> <span class="ow">and</span> <span class="n">Acol</span> <span class="o">&gt;</span> <span class="n">col</span><span class="p">):</span>
+                <span class="k">elif</span> <span class="p">(</span><span class="n">Acol</span> <span class="o">&gt;</span> <span class="n">col</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span><span class="p">][</span><span class="nb">abs</span><span class="p">(</span><span class="n">Acol</span> <span class="o">-</span> <span class="n">r</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)]</span> <span class="o">!=</span> <span class="s2">&quot;.&quot;</span><span class="p">):</span>
                     <span class="k">if</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span><span class="p">][</span><span class="nb">abs</span><span class="p">(</span><span class="n">Acol</span> <span class="o">-</span> <span class="n">r</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)]</span><span class="o">.</span><span class="n">team</span> <span class="o">==</span> <span class="n">piece</span><span class="o">.</span><span class="n">team</span><span class="p">):</span>
                         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;cant move </span><span class="si">%s</span><span class="s2"> in space of other pieces&quot;</span>  <span class="o">%</span> <span class="p">(</span><span class="n">piece</span><span class="p">))</span>
                         <span class="k">return</span> <span class="kc">False</span>
@@ -14477,11 +14479,69 @@ a.anchor-link {
                         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;cant move </span><span class="si">%s</span><span class="s2"> in space of other pieces&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">piece</span><span class="p">))</span>
                         <span class="k">return</span> <span class="kc">False</span>
         <span class="k">return</span> <span class="kc">True</span>
+
     <span class="k">def</span> <span class="nf">resetTable</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">White</span><span class="p">)):</span>
-            <span class="n">White</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">first_move</span> <span class="o">=</span> <span class="kc">True</span>
-            <span class="n">Black</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">first_move</span> <span class="o">=</span> <span class="kc">True</span>
-        
+            <span class="n">White</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">reset</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="n">Black</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">reset</span> <span class="o">=</span> <span class="kc">True</span>
+    
+    <span class="k">def</span> <span class="nf">can_kill</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">piece</span><span class="p">,</span><span class="n">Arow</span><span class="p">,</span><span class="n">Acol</span><span class="p">):</span>
+            <span class="n">player</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">piece</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+            <span class="c1">#if (player == &quot;P&quot;):</span>
+             <span class="c1">#   if (piece.team == &quot;w&quot;):</span>
+              <span class="c1">#      if(Acol == 0 and Arow != 7):</span>
+               <span class="c1">#         self.grid[Arow + 1][Acol + 1] = &quot;E&quot;</span>
+                <span class="c1">#    elif(Acol == 7):</span>
+                 <span class="c1">#       self.grid[Arow + 1][Acol - 1] = &quot;E&quot;</span>
+                  <span class="c1">#  elif (Acol &gt; 0 and Acol &lt; 7):</span>
+                   <span class="c1">#     self.grid[Arow + 1][Acol + 1] = &quot;E&quot;</span>
+                    <span class="c1">#    self.grid[Arow + 1][Acol - 1] = &quot;E&quot;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">player</span> <span class="o">==</span> <span class="s2">&quot;R&quot;</span><span class="p">):</span>
+                <span class="k">if</span><span class="p">(</span><span class="n">piece</span><span class="o">.</span><span class="n">team</span> <span class="o">==</span> <span class="s1">&#39;w&#39;</span><span class="p">):</span>
+                    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dimension</span><span class="p">):</span>
+                        
+                        <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">Arow</span> <span class="o">&lt;=</span> <span class="mi">7</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">+</span> <span class="n">Arow</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+                            <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span> <span class="o">+</span> <span class="n">x</span><span class="p">][</span><span class="n">Acol</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;.&quot;</span><span class="p">):</span>
+                                <span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span> <span class="o">+</span> <span class="n">x</span><span class="p">][</span><span class="n">Acol</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;E&quot;</span>
+                            <span class="k">elif</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span> <span class="o">+</span> <span class="n">x</span><span class="p">][</span><span class="n">Acol</span><span class="p">]</span><span class="o">.</span><span class="n">team</span> <span class="o">!=</span> <span class="n">piece</span><span class="o">.</span><span class="n">team</span><span class="p">):</span>
+                                <span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span> <span class="o">+</span> <span class="n">x</span><span class="p">][</span><span class="n">Acol</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;E&quot;</span>
+                                <span class="k">break</span>
+                            <span class="k">elif</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span> <span class="o">+</span> <span class="n">x</span><span class="p">][</span><span class="n">Acol</span><span class="p">]</span><span class="o">.</span><span class="n">team</span> <span class="o">==</span> <span class="n">piece</span><span class="o">.</span><span class="n">team</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span> <span class="o">+</span> <span class="n">x</span><span class="p">][</span><span class="n">Acol</span><span class="p">]</span> <span class="o">!=</span> <span class="n">piece</span><span class="p">):</span>
+                                <span class="k">break</span>
+                    
+                    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dimension</span><span class="p">):</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">Arow</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">):</span>
+                            <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="nb">abs</span><span class="p">(</span><span class="n">Arow</span> <span class="o">-</span> <span class="n">x</span><span class="p">)][</span><span class="n">Acol</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;.&quot;</span><span class="p">):</span>
+                                <span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="nb">abs</span><span class="p">(</span><span class="n">Arow</span> <span class="o">-</span> <span class="n">x</span><span class="p">)][</span><span class="n">Acol</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;E&quot;</span>
+                            <span class="k">elif</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="nb">abs</span><span class="p">(</span><span class="n">Arow</span> <span class="o">-</span> <span class="n">x</span><span class="p">)][</span><span class="n">Acol</span><span class="p">]</span><span class="o">.</span><span class="n">team</span> <span class="o">!=</span> <span class="n">piece</span><span class="o">.</span><span class="n">team</span><span class="p">):</span>
+                                <span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="nb">abs</span><span class="p">(</span><span class="n">Arow</span> <span class="o">-</span> <span class="n">x</span><span class="p">)][</span><span class="n">Acol</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;E&quot;</span>
+                                <span class="k">break</span>
+                            <span class="k">elif</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="nb">abs</span><span class="p">(</span><span class="n">Arow</span> <span class="o">-</span> <span class="n">x</span><span class="p">)][</span><span class="n">Acol</span><span class="p">]</span><span class="o">.</span><span class="n">team</span> <span class="o">==</span> <span class="n">piece</span><span class="o">.</span><span class="n">team</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="nb">abs</span><span class="p">(</span><span class="n">Arow</span> <span class="o">-</span> <span class="n">x</span><span class="p">)][</span><span class="n">Acol</span><span class="p">]</span> <span class="o">!=</span> <span class="n">piece</span><span class="p">):</span>
+                                <span class="k">break</span>
+                        
+                    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dimension</span><span class="p">):</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">Acol</span> <span class="o">&lt;=</span> <span class="mi">7</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">+</span> <span class="n">Acol</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+                            <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span><span class="p">][</span><span class="n">Acol</span> <span class="o">+</span> <span class="n">x</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;.&quot;</span><span class="p">):</span>
+                                <span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span><span class="p">][</span><span class="n">Acol</span> <span class="o">+</span> <span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;E&quot;</span>
+                            <span class="k">elif</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span><span class="p">][</span><span class="n">Acol</span> <span class="o">+</span> <span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">team</span> <span class="o">!=</span> <span class="n">piece</span><span class="o">.</span><span class="n">team</span><span class="p">):</span>
+                                <span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span><span class="p">][</span><span class="n">Acol</span> <span class="o">+</span> <span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;E&quot;</span>
+                                <span class="k">break</span>
+                            <span class="k">elif</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span><span class="p">][</span><span class="nb">abs</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">Acol</span><span class="p">)]</span><span class="o">.</span><span class="n">team</span> <span class="o">==</span> <span class="n">piece</span><span class="o">.</span><span class="n">team</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span><span class="p">][</span><span class="nb">abs</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">Acol</span><span class="p">)]</span> <span class="o">!=</span> <span class="n">piece</span><span class="p">):</span>
+                                <span class="k">break</span>
+                    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dimension</span><span class="p">):</span>
+
+                        <span class="k">if</span> <span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">Acol</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">):</span>
+                            <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span><span class="p">][</span><span class="nb">abs</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">Acol</span><span class="p">)]</span> <span class="o">==</span> <span class="s2">&quot;.&quot;</span><span class="p">):</span>
+                                <span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span><span class="p">][</span><span class="nb">abs</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">Acol</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;E&quot;</span>
+                            <span class="k">elif</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span><span class="p">][</span><span class="nb">abs</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">Acol</span><span class="p">)]</span><span class="o">.</span><span class="n">team</span> <span class="o">!=</span> <span class="n">piece</span><span class="o">.</span><span class="n">team</span><span class="p">):</span>
+                                <span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span><span class="p">][</span><span class="nb">abs</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">Acol</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;E&quot;</span>
+                                <span class="k">break</span>
+                            <span class="k">elif</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span><span class="p">][</span><span class="nb">abs</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">Acol</span><span class="p">)]</span><span class="o">.</span><span class="n">team</span> <span class="o">==</span> <span class="n">piece</span><span class="o">.</span><span class="n">team</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">Arow</span><span class="p">][</span><span class="nb">abs</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">Acol</span><span class="p">)]</span> <span class="o">!=</span> <span class="n">piece</span><span class="p">):</span>
+                                <span class="k">break</span>
+                            
+                            <span class="k">if</span> <span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">Acol</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)):</span>
+                                <span class="k">break</span>
+                    
 </pre></div>
 
      </div>
@@ -14492,15 +14552,26 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[227]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Testes Brancas</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Testes peças</span>
 <span class="n">board</span> <span class="o">=</span> <span class="n">Board</span><span class="p">()</span>
 
+<span class="c1">#board.pawn_move(board.grid[1][0],1,0,3,0)</span>
+<span class="c1">#board.pawn_move(board.grid[6][0],6,0,4,0)</span>
+<span class="c1">#board.pawn_move(board.grid[6][1],6,1,4,1)</span>
 
+<span class="c1">#board.rook_move(board.grid[0][0],0,0,2,0)</span>
+<span class="c1">#board.rook_move(board.grid[2][0],2,0,2,1)</span>
+<span class="c1">#board.rook_move(board.grid[7][0],7,0,5,0)</span>
 
-
+<span class="c1">#board.knight_move(board.grid[0][1],0,1,2,2)s</span>
+<span class="c1">#board.knight_move(board.grid[7][1],7,1,5,2)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">board</span><span class="o">.</span><span class="n">dimension</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">board</span><span class="o">.</span><span class="n">dimension</span><span class="p">):</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">board</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">z</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">&quot;.&quot;</span><span class="p">):</span>
+            <span class="n">board</span><span class="o">.</span><span class="n">can_kill</span><span class="p">(</span><span class="n">board</span><span class="o">.</span><span class="n">grid</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">z</span><span class="p">],</span><span class="n">i</span><span class="p">,</span><span class="n">z</span><span class="p">)</span>
 <span class="n">board</span><span class="o">.</span><span class="n">print</span><span class="p">()</span>
 <span class="n">board</span><span class="o">.</span><span class="n">resetTable</span><span class="p">()</span>
 </pre></div>
@@ -14523,13 +14594,13 @@ a.anchor-link {
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>
-RHBQKBHR
+.HBQKBHR
 PPPPPPPP
-........
-........
-........
-........
-pppppppp
+....E...
+....E...
+EEEEREEE
+....E...
+ppppEppp
 rhbqkbhr
 </pre>
 </div>
@@ -14537,6 +14608,34 @@ rhbqkbhr
 
 </div>
 
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
 </div>
 
 </div>
